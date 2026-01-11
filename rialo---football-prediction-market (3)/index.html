@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RialoHUBx</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --neon-cyan: #22d3ee;
+        --neon-purple: #c084fc;
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #000000;
+        color: #f8fafc;
+        min-height: 100vh;
+        margin: 0;
+        letter-spacing: -0.01em;
+      }
+      .font-display {
+        font-family: 'Bebas Neue', cursive;
+      }
+      /* Override any specific mono styles to keep brand consistency if desired, 
+         but keeping the class name for structure */
+      .font-mono {
+        font-family: 'Manrope', sans-serif;
+        letter-spacing: 0.05em;
+      }
+      .cyber-border {
+        position: relative;
+        border: 1px solid rgba(34, 211, 238, 0.2);
+        box-shadow: 0 0 15px rgba(34, 211, 238, 0.05);
+      }
+      .cyber-border::before {
+        content: '';
+        position: absolute;
+        top: -1px; left: -1px;
+        width: 10px; height: 10px;
+        border-top: 2px solid var(--neon-cyan);
+        border-left: 2px solid var(--neon-cyan);
+      }
+      .cyber-glow-text {
+        text-shadow: 0 0 8px rgba(34, 211, 238, 0.6);
+      }
+      .glass {
+        background: rgba(15, 23, 42, 0.4);
+        backdrop-filter: blur(12px);
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--neon-cyan);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

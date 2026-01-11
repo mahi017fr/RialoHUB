@@ -1,0 +1,5 @@
+{
+  "name": "Rialo - Football Prediction Market",
+  "description": "A high-fidelity football prediction market application built with React, Tailwind, and Gemini for match analysis. Features wallet mock-integration, match dashboards, and accuracy leaderboards.",
+  "requestFramePermissions": []
+}
